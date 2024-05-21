@@ -31,10 +31,9 @@ var page int32
 func main() {
 	fmt.Println("Started Analysing")
 
-	s3BucketName := "textract-adapters-eu-west-1-9334d2d8-4515-492d-9595-470a1a7b1f4"
-	objectKey := "adapters/b6b3d8bae0f5/original_assets/1be209a6-8237-4001-9ff0-eadc3d83be22.pdf"
-	// objectKey := "adapters/b6b3d8bae0f5/original_assets/eaafd6c8-a586-43c7-9d1f-e4d4c177905b.png"
-	adapterId := "67e92cef4b18"
+	s3BucketName := ""
+	objectKey := ""
+	adapterId := ""
 	textQueryString := "What is the No Claims Discount (NCD) Years"
 
 	cfg, err := config.LoadDefaultConfig(context.Background())
